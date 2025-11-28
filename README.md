@@ -331,6 +331,16 @@ const options: pdf.CreateOptions = { format: 'A4' };
 pdf.create(html, options).toFile('./output.pdf');
 ```
 
+## What's Next?
+
+I'm actively maintaining this library and have several features planned:
+
+- [ ] Batch processing API for multiple PDFs
+- [ ] Built-in templates for common document types
+- [ ] Enhanced watermarking support
+- [ ] PDF/A compliance for archival
+- [ ] Digital signature support
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
