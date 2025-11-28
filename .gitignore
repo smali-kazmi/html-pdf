@@ -143,5 +143,8 @@ vite.config.ts.timestamp-*
 output*.pdf
 examples/*.pdf
 
+# Allow example PDFs in examples/output/
+!examples/output/*.pdf
+
 # macOS
 .DS_Store
