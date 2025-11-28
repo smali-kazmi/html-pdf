@@ -1,0 +1,46 @@
+{
+  "name": "html-pdf-chrome",
+  "version": "1.0.0",
+  "description": "HTML to PDF converter using Puppeteer and headless Chrome - a modern replacement for node-html-pdf",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "bin": {
+    "html-pdf-chrome": "./bin/html-pdf-chrome.js"
+  },
+  "scripts": {
+    "test": "node test/test.js",
+    "example": "node examples/basic.js",
+    "example:all": "node examples/basic.js && node examples/header-footer.js && node examples/buffer-stream.js"
+  },
+  "keywords": [
+    "html",
+    "pdf",
+    "chrome",
+    "puppeteer",
+    "pdf-converter",
+    "headless-chrome",
+    "html-to-pdf",
+    "pdf-generation",
+    "node-html-pdf",
+    "phantomjs-replacement"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smali-kazmi/html-pdf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/smali-kazmi/html-pdf/issues"
+  },
+  "homepage": "https://github.com/smali-kazmi/html-pdf#readme"
+}
