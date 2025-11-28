@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            color: #333;
+        }
+
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+        }
+
+        .info-box {
+            background-color: #ecf0f1;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .highlight {
+            background-color: #fff9c4;
+            padding: 2px 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .footer-note {
+            margin-top: 50px;
+            font-size: 12px;
+            color: #7f8c8d;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sample Test Document</h1>
+
+    <div class="info-box">
+        <strong>Note:</strong> This is a test HTML file for the html-pdf-chrome library.
+        It demonstrates various HTML and CSS features that should render correctly in PDF format.
+    </div>
+
+    <h2>About This Library</h2>
+    <p>
+        The <span class="highlight">html-pdf-chrome</span> library is a modern replacement for the
+        deprecated node-html-pdf package. It uses Puppeteer and headless Chrome instead of PhantomJS,
+        providing better support for modern web standards.
+    </p>
+
+    <h2>Key Features</h2>
+    <ul>
+        <li>Drop-in replacement with same API</li>
+        <li>Uses modern Puppeteer and headless Chrome</li>
+        <li>Support for complex CSS and modern web standards</li>
+        <li>Headers and footers support</li>
+        <li>Custom page sizes and orientations</li>
+        <li>TypeScript definitions included</li>
+    </ul>
+
+    <h2>Sample Data Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Feature</th>
+                <th>node-html-pdf</th>
+                <th>html-pdf-chrome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Engine</td>
+                <td>PhantomJS (deprecated)</td>
+                <td>Puppeteer/Chrome</td>
+            </tr>
+            <tr>
+                <td>CSS3 Support</td>
+                <td>Limited</td>
+                <td>Full</td>
+            </tr>
+            <tr>
+                <td>Modern Web APIs</td>
+                <td>No</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Active Maintenance</td>
+                <td>No</td>
+                <td>Yes</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Usage Example</h2>
+    <div class="info-box">
+        <pre><code>const pdf = require('html-pdf-chrome');
+const html = fs.readFileSync('./test.html', 'utf8');
+
+pdf.create(html, { format: 'Letter' })
+  .toFile('./output.pdf', (err, res) => {
+    console.log('PDF created:', res.filename);
+  });</code></pre>
+    </div>
+
+    <div class="footer-note">
+        Generated with html-pdf-chrome | Document Date: November 28, 2025
+    </div>
+</body>
+
+</html>
