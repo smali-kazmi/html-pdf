@@ -47,6 +47,17 @@ pdf.create(html, options).toFile('./output.pdf', function(err, res) {
 });
 ```
 
+## 📄 Example PDFs
+
+See real-world output examples from this library:
+
+- **[Basic Example](examples/output/basic-example.pdf)** (30KB) - Simple HTML to PDF conversion
+- **[Header & Footer Example](examples/output/header-footer-example.pdf)** (48KB) - Professional document with headers/footers
+- **[Invoice Example](examples/output/invoice-example.pdf)** (100KB) - Complex invoice with tables and styling
+- **[Annual Report Example](examples/output/annual-report-example.pdf)** (534KB) - Multi-page report with images, tables, charts, and custom headers/footers
+
+All example source code is available in the [examples/](examples/) directory.
+
 ## API
 
 ### pdf.create(html, [options])
