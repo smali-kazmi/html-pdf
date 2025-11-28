@@ -1,6 +1,7 @@
-# html-pdf-chrome
+# html-pdf-puppeteer
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://img.shields.io/npm/v/html-pdf-puppeteer.svg)](https://www.npmjs.com/package/html-pdf-puppeteer)
 
 > HTML to PDF converter using Puppeteer and headless Chrome - a modern replacement for the deprecated [node-html-pdf](https://github.com/marcbachmann/node-html-pdf)
 
@@ -23,20 +24,20 @@ The original `node-html-pdf` library relied on PhantomJS, which has been depreca
 ## Installation
 
 ```bash
-npm install html-pdf-chrome
+npm install html-pdf-puppeteer
 ```
 
 Or install globally for CLI usage:
 
 ```bash
-npm install -g html-pdf-chrome
+npm install -g html-pdf-puppeteer
 ```
 
 ## Quick Start
 
 ```javascript
 const fs = require('fs');
-const pdf = require('html-pdf-chrome');
+const pdf = require('html-pdf-puppeteer');
 const html = fs.readFileSync('./input.html', 'utf8');
 
 const options = { format: 'Letter' };
@@ -187,7 +188,7 @@ const options = {
 ### Basic PDF Generation
 
 ```javascript
-const pdf = require('html-pdf-chrome');
+const pdf = require('html-pdf-puppeteer');
 
 const html = '<h1>Hello World</h1>';
 const options = { format: 'A4' };
@@ -289,17 +290,17 @@ async function generateReport() {
 
 ```bash
 # Basic usage
-html-pdf-chrome input.html output.pdf
+html-pdf-puppeteer input.html output.pdf
 
 # With options
-html-pdf-chrome input.html output.pdf --format A4 --orientation landscape
+html-pdf-puppeteer input.html output.pdf --format A4 --orientation landscape
 ```
 
 ## Migration from node-html-pdf
 
 This library is designed as a drop-in replacement. In most cases, you can simply:
 
-1. Replace `require('html-pdf')` with `require('html-pdf-chrome')`
+1. Replace `require('html-pdf')` with `require('html-pdf-puppeteer')`
 2. Update your `package.json` dependencies
 
 **Note:** Some PhantomJS-specific options are not supported. See the options table above for supported options.
@@ -322,7 +323,7 @@ This library is designed as a drop-in replacement. In most cases, you can simply
 TypeScript definitions are included:
 
 ```typescript
-import * as pdf from 'html-pdf-chrome';
+import * as pdf from 'html-pdf-puppeteer';
 
 const html: string = '<h1>Hello</h1>';
 const options: pdf.CreateOptions = { format: 'A4' };
